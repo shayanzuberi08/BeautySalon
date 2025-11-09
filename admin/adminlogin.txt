@@ -1,0 +1,3 @@
+Admin Login
+Email :admin@salon.com
+pass: 123456

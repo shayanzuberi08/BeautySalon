@@ -1,0 +1,66 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Page Title */
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Register Form */
+#registerForm {
+  display: grid;
+  gap: 1rem;
+  max-width: 450px;
+  margin: auto;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(213, 0, 249, 0.2);
+}
+
+#registerForm label {
+  text-align: left;
+  font-weight: bold;
+}
+
+#registerForm input {
+  background: #0f0f0f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+#registerForm input:focus {
+  border: 1px solid #ff4081;
+}
+
+#registerForm button {
+  background: linear-gradient(90deg, #d500f9, #ff4081);
+  color: #fff;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#registerForm button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+h2 {
+text-align: center;
+margin-bottom: 30px;
+font-size: 2rem;
+color: #fff;
+}
+table {
+width: 100%;
+max-width: 1000px;
+margin: auto;
+border-collapse: collapse;
+background: #1a1a1a;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+th, td {
+padding: 14px 18px;
+text-align: center;
+font-size: 1rem;
+}
+th {
+background: linear-gradient(90deg, #d500f9, #ff4081);
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+tr {
+border-bottom: 1px solid #333;
+}
+tr:nth-child(even) {
+background: #222;
+}
+tr:nth-child(odd) {
+background: #1a1a1a;
+}
+tr:hover {
+background: #2a2a2a;
+}
+td {
+color: #ccc;
+}
+/* Status Badges */
+.status {
+font-weight: bold;
+padding: 6px 12px;
+border-radius: 5px;
+font-size: 0.9rem;
+display: inline-block;
+}
+.status.pending { background: orange; color: #fff; }
+.status.confirmed { background: #28a745; color: #fff; }
+.status.cancelled { background: #dc3545; color: #fff; }

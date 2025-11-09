@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+h1{
+    margin-top: 8%;
+}
+/* Page Title */
+h1, h2 {
+    padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* Feedback Form */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+form textarea {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+form button {
+  background: linear-gradient(90deg, #d500f9, #ff4081);
+  color: #fff;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+/* Feedback List */
+ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+ul .feedback-msg {
+  background: #1a1a1a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 64, 129, 0.2);
+}
+
+ul .feedback-msg strong {
+  color: #ff4081;
+}
+
+ul .feedback-msg em {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-left: 8px;
+}

@@ -1,0 +1,73 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+/* Booking Section */
+.booking {
+  padding: 3rem 10%;
+  text-align: center;
+}
+
+.booking h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* Form Styling */
+.booking form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.booking input,
+.booking select,
+.booking button {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.booking input,
+.booking select {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.booking input:focus,
+.booking select:focus {
+  border: 1px solid #ff4081;
+}
+
+/* Button */
+.booking button {
+  background: linear-gradient(90deg, #d500f9, #ff4081);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking button:hover {
+  opacity: 0.8;
+}
+/* Date & Time side by side */
+.datetime-group {
+  display: flex;
+  gap: 1rem;
+}
+.datetime-group input {
+  flex: 1;
+}
