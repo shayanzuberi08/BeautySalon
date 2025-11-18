@@ -89,18 +89,18 @@ session_start();
     }
 
     /* ===== MOBILE VIEW ===== */
-    @media (max-width: 768px) {
+    @media (max-width: 920px) {
       nav {
         position: absolute;
         top: 80px;
         right: 0;
         background: #fff;
         flex-direction: column;
-        width: 220px;
+        width: 300px;
         text-align: center;
         padding: 20px;
         gap: 15px;
-        display: none;   /* 🔴 Default hidden */
+        display: none;   /*🔴 Default hidden */
         box-shadow: -2px 2px 8px rgba(0,0,0,0.1);
       }
 
@@ -122,7 +122,7 @@ session_start();
       <span></span>
       <span></span>
     </div>
-    <nav>
+    <nav class="active">
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a href="services.php">Services</a>
@@ -132,16 +132,15 @@ session_start();
       <?php if(isset($_SESSION['user_id'])): ?>
         <a href="logout.php">Logout</a>
       <?php else: ?>
-
-        <!-- 🔎 Search Bar -->
+        <a href="login.php">Login</a>
+        <a href="register.php">Register</a>
+      <?php endif; ?>
+      
+      <!-- 🔎 Search Bar -->
       <form class="search-form" method="GET" action="search_result.php">
         <input type="text" name="q" placeholder="Search services...">
         <button type="submit">Search</button>
       </form>
-
-        <a href="login.php">Login</a>
-        <a href="register.php">Register</a>
-      <?php endif; ?>
     </nav>
   </header>
 
